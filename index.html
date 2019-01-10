@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html ng-app="modalApp">
+
+<head>
+
+	<!--================== ANGULARJS & ANGULAR ANIMATE ==================-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+	<!--================== JAVASCRIPT ==================-->
+	<script src="./public/js/app.js" charset="utf-8"></script>
+
+	<!--================== CSS ==================-->
+	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+
+	<!--================== FAVICON ==================-->
+	<link rel="icon" href="./public/images/favicon.png">
+
+	<!--================== TITLE ==================-->
+	<title>e m f o x i l y</title>
+
+	<!--================== FOR MOBILE RESPONSIVENESS ==================-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body ng-controller="modalController as ctrl">
+
+	<!--================== CONTAINER ==================-->
+	<div class="container">
+
+		<!--================== PRESS START ==================-->
+		<div class="pressStart">
+			<button ng-click="ctrl.modal()">
+				press start
+			</button>
+		</div>
+
+		<!--================== MODAL ==================-->
+		<div class="modal" ng-show="ctrl.showModal">
+
+			<!--================== PICTURE & ABOUT ==================-->
+			<div class="picture">
+				<img src="./public/images/emily.png" alt="">
+			</div>
+
+			<div class="about">
+				<img src="./public/images/aboutemily.png" />
+				<p>
+					Hi! I'm Emily and I'm a UX/UI designer and front-end web developer based in Georgia.
+					<br />
+					<br />
+					When I'm not working on a project, I'm writing stories, creating digital art, and probably binging The Office on
+					Netflix.
+					<br />
+					<br />
+					You can check out some of my work and my social media to the right!
+				</p>
+			</div>
+
+			<!--================== NAVIGATION ==================-->
+			<nav>
+				<a href="/">
+					<img src="./public/images/home.png" alt="home" />
+				</a>
+				<br />
+				<a href="mailto:emily@emfoxily.com">
+					<img src="./public/images/mail.png" alt="contact" />
+				</a>
+				<a href="./public/images/Resume.pdf">
+					<img src="./public/images/resume.png" alt="resume" />
+				</a>
+				<br />
+				<a href="http://linkedin.com/in/emcaitlin">
+					<img src="./public/images/linkedin.png" alt="linkedin" />
+				</a>
+				<br />
+				<a href="http://github.com/emfoxily">
+					<img src="./public/images/github.png" alt="github" />
+				</a>
+			</nav>
+
+			<!--================== PORTFOLIO ==================-->
+			<div class="portfolio">
+				<img src="./public/images/portfolio.png" alt="portfolio" />
+				<div class="folioBox">
+
+					<div class="work1"></div>
+
+					<span>
+						<img src="./public/images/github.png" alt="code on github" />
+						<a href="https://github.com/emfoxily/connect4">
+							CODE
+						</a>
+						•
+						<a href="https://emfoxily.com/connect4">
+							PROJECT
+						</a>
+						<img src="./public/images/link.png" alt="link to live project">
+
+					</span>
+					<br />
+					<br />
+
+					<div class="work2"></div>
+
+					<span>
+						<img src="./public/images/github.png" alt="code on github" />
+						<a href="https://github.com/emfoxily/maraudersApp">
+							CODE
+						</a>
+						•
+						<a href="https://maraudersapp.herokuapp.com/">
+							PROJECT
+						</a>
+						<img src="./public/images/link.png" alt="link to live project">
+
+					</span>
+					<br />
+					<br />
+
+					<div class="work3"></div>
+
+					<span>
+						<img src="./public/images/github.png" alt="code on github" />
+						<a href="https://github.com/emfoxily/speculook">
+							CODE
+						</a>
+						•
+						<a href="http://speculook.herokuapp.com/">
+							PROJECT
+						</a>
+						<img src="./public/images/link.png" alt="link to live project">
+
+					</span>
+					<br />
+					<br />
+
+					<div class="work4"></div>
+
+					<span>
+						<img src="./public/images/github.png" alt="code on github" />
+						<a href="https://github.com/ashwanth1109/EventfulRails">
+							CODE
+						</a>
+						•
+						<a href="http://eventful-rails.herokuapp.com/">
+							PROJECT
+						</a>
+						<img src="./public/images/link.png" alt="link to live project">
+
+					</span>
+					<br />
+					<br />
+
+					<div class="work5"></div>
+
+					<span>
+						<img src="./public/images/github.png" alt="code on github" />
+						<a href="https://github.com/emfoxily/santas-workshop">
+							CODE
+						</a>
+						•
+						<a href="http://santasworkshop.herokuapp.com/">
+							PROJECT
+						</a>
+						<img src="./public/images/link.png" alt="link to live project">
+
+					</span>
+					<br />
+					<br />
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--================== BACKGROUND IMAGE ==================-->
+	<div class="bg">
+		<img src="./public/images/emfoxilywebsite.png" alt="background image" />
+	</div>
+
+</body>
+
+</html>

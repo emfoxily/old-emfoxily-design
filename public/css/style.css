@@ -1,0 +1,382 @@
+/*================== FONTS ==================*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+/*================== GENERAL ==================*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	position: fixed;
+	background: rgb(0, 0, 0);
+	margin: 0;
+	font-family: 'Patrick Hand', sans-serif;
+		font-size: 1.5vw;
+		color: ghostwhite;
+		text-align: center;
+}
+
+h2 {
+	font-size: 17pt;
+	font-weight: 600;
+}
+
+/*================== BACKGROUND IMAGE ==================*/
+.bg img {
+	position: fixed;
+	width: 100%;
+	height: auto;
+		min-height: 100%;
+		min-width: 1024px;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width: 1024px) {
+	.bg img {
+		left: 50%;
+		margin-left: -50%;
+	}
+}
+
+/*================== NAVIGATION ==================*/
+nav {
+	display: block;
+	border-right: .1vw solid rgb(246, 96, 219);
+	height: 32vw;
+	width: 10%;
+	line-height: 5vw;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav img {
+	width: 6.5vw;
+	padding: .5em 1em;
+	cursor: pointer;
+	opacity: .3;
+	transition: 1s;
+}
+
+nav img:hover {
+	opacity: 1;
+}
+
+/*================== CONTAINER ==================*/
+.container {
+	position: absolute;
+  	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: -50px;
+  	width: 800px;
+  	height: 800px;
+}
+
+/*================== PRESS START ==================*/
+.pressStart {
+	position: fixed;
+	animation: fade;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	opacity: .5;
+	width: 100%;
+	margin: 55% 3%;
+	z-index: 1;
+}
+
+.pressStart button {
+	background: transparent;
+	font-family: 'Press Start 2P', sans-serif;
+		font-size: 2vw;
+		color: ghostwhite;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/*================== MODAL ==================*/
+.modal {
+	display: flex;
+	background-image: radial-gradient(circle, rgb(30, 30, 30), rgb(20, 20, 20), rgb(0, 0, 0));
+		background-size: cover;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+		padding: 4.5em;
+	margin: auto;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	transition: all linear 1s;
+	opacity: 1;
+	overflow: auto;
+}
+
+/*================== NG-HIDE FOR ANGULAR ANIMATE ==================*/
+.ng-hide {
+	opacity: 0;
+}
+
+/*================== PICTURE & ABOUT ==================*/
+.about {
+	display: block;
+	border-right: .1vw solid rgb(246, 96, 219);
+	height: 32vw;
+	padding-right: 1em;
+	width: 25%;
+}
+
+.about p {
+	margin-top: -.5vw;
+	width: 20vw;
+	height: 15vw;
+		padding: 1em;
+		overflow: hidden;
+	font-size: 1.1vw;
+	text-align: justify;
+}
+
+.about img {
+	width: 20vw;
+}
+
+.picture img {
+	border: .3vw solid rgb(246, 96, 219);
+	width: 24vw;
+}
+
+/*================== PORTFOLIO ==================*/
+.portfolio {
+	width: 35.3%;
+	height: 36vw;
+	padding: 1em;
+	margin-left: 1vw;
+	margin-top: -7vw;
+	text-align: right;
+}
+
+.portfolio img {
+	width: 10vw;
+}
+
+.folioBox span {
+	background: rgb(246, 96, 219);
+	padding: 0 7vw 0 7.8vw;
+	margin-left: -1vw;
+}
+
+.folioBox span img {
+	width: 1.2vw;
+}
+
+.folioBox a {
+	text-decoration: none;
+	color: white;
+}
+
+.folioBox {
+	overflow: auto;
+	height: 27vw;
+	text-align: center;
+}
+
+.work1 {
+	background-image: url('../images/connect4.png');
+	background-size: cover;
+	display: block;
+	border: .1vw solid rgb(246, 96, 219);
+	width: 27vw;
+	height: 15vw;
+	transition: 1s;
+}
+
+.work1:hover {
+	background-image: url('../images/connect4two.png');
+	transition: 1s;
+}
+
+.work2 {
+	background-image: url('../images/laughingsock.png');
+	background-size: cover;
+	display: block;
+	border: .1vw solid rgb(246, 96, 219);
+	width: 27vw;
+	height: 15vw;
+	transition: 1s;
+}
+
+.work2:hover {
+	background-image: url('../images/ollivander.png');
+	transition: 1s;
+}
+
+.work3 {
+	background-image: url('../images/speculook.png');
+	background-size: cover;
+	display: block;
+	border: .1vw solid rgb(246, 96, 219);
+	width: 27vw;
+	height: 15vw;
+	transition: 1s;
+}
+
+.work3:hover {
+	background-image: url('../images/speculook2.png');
+	transition: 1s;
+}
+
+.work4 {
+	background-image: url('../images/eventfulbw.png');
+	background-size: cover;
+	display: block;
+	border: .1vw solid rgb(246, 96, 219);
+	width: 27vw;
+	height: 15vw;
+	transition: 1s;
+}
+
+.work4:hover {
+	background-image: url('../images/eventful.png');
+	transition: 1s;
+}
+
+.work5 {
+	background-image: url('../images/santasworkshopbw.png');
+	background-size: cover;
+	display: block;
+	border: .1vw solid rgb(246, 96, 219);
+	width: 27vw;
+	height: 15vw;
+	transition: 1s;
+}
+
+.work5:hover {
+	background-image: url('../images/santasworkshop.png');
+	transition: 1s;
+}
+
+/*================== MOBILE RESPONSIVENESS ==================*/
+@media only screen and (max-width: 1024px) {
+
+	.modal {
+		display: block;
+	}
+
+	.aboutemily, nav, .portfolio, .work1, .work2, .work3, .work4, .work5 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.aboutemily {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.pressStart {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		margin: 125% 0;
+		top: 0;
+		left: 0;
+	}
+
+	.pressStart button {
+		font-size: 5vw;
+	}
+
+	.bg img {
+		margin: 0 -90%;
+		width: 275%;
+		left: 0%;
+	}
+
+	.about, nav {
+		border: none;
+	}
+
+	nav {
+		width: 90%;
+		height: 15%;
+		padding: .5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto 10%;
+		border-top: .3vw solid rgb(246, 96, 219);
+		border-bottom: .3vw solid rgb(246, 96, 219);
+		transform: translateX(-5vw);
+	}
+
+	nav img {
+		width: 75%;
+		vertical-align: top;
+	}
+
+	.about {
+		display: flex;
+		width: 100%;
+	}
+
+	.about p {
+		width: 100%;
+		font-size: 150%;
+		height: auto;
+	}
+
+	.about img {
+		width: 50%;
+	}
+
+	.picture {
+		width: 100%;
+	}
+
+	.picture img {
+		width: 90%;
+	}
+
+	.folioBox {
+		height: auto;
+		width: 100%;
+		transform: translateX(3vw);
+	}
+
+	.folioBox span img {
+		width: 3vw;
+		height: 3vw;
+		transform: none;
+	}
+
+	.folioBox span {
+		font-size: 3.5vw;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		height: auto;
+	}
+
+	.portfolio img {
+		width: 50%;
+		height: 100%;
+		transform: rotate(65deg) translateX(20vw) translateY(5vw);
+	}
+}
+
+@keyframes fade {
+	50% {
+		opacity: 1;
+	}
+	50% {
+		opacity: .1;
+	}
+}
